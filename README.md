@@ -1,5 +1,5 @@
-### Egyszerű Android studioval készült qiuzjáték
+#### Android studio
 
---
+** QUIZ 
 
 ![quiz](Quiz.jpg)
