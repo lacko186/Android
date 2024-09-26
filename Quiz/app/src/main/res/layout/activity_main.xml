@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="68dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="220dp"
+        android:text="03:00"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/kerdes"
+        app:layout_constraintEnd_toStartOf="@+id/kep"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/kep"
+        android:layout_width="221dp"
+        android:layout_height="221dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_image"
+        android:clipToOutline="true"
+        android:src="@drawable/einstein2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="QUIZ"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kep" />
+
+    <Button
+        android:id="@+id/negyedik"
+        android:layout_width="251dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#9C27B0"
+        android:shadowColor="#F20909"
+        android:text="Negyedik válasz"
+        android:textSize="40px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/harmadik" />
+
+    <Button
+        android:id="@+id/masodik"
+        android:layout_width="249dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#4CAF50"
+        android:shadowColor="#F20909"
+        android:text="Második válasz"
+        android:textSize="40px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/elso" />
+
+    <TextView
+        android:id="@+id/kerdes"
+        android:layout_width="383dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="Kérdések itt"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quiz" />
+
+    <Button
+        android:id="@+id/harmadik"
+        android:layout_width="250dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="#2196F3"
+        android:shadowColor="#F20909"
+        android:text="Harmadik válasz"
+        android:textSize="40px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/masodik" />
+
+    <Button
+        android:id="@+id/elso"
+        android:layout_width="252dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F44336"
+        android:shadowColor="#F20909"
+        android:text="Első válasz"
+        android:textSize="40px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kerdes" />
+
+    <Button
+        android:id="@+id/bevitel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#2C1D1D"
+        android:text="Bevitel"
+        android:textSize="40px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/negyedik" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

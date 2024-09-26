@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/eredmenyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Eredmény: 0.00%"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/gratulacioImageView"
+        android:layout_width="398dp"
+        android:layout_height="466dp"
+        android:contentDescription="Gratulálok!"
+        android:src="@drawable/einstein2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Gratulálunk, vége a kvíznek!"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ujrakezdesButton"
+        android:layout_width="283dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#F20000"
+        android:text="Újrakezdés"
+        android:textSize="55px"
+        android:textStyle="bold" />
+</LinearLayout>
