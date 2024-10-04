@@ -1,0 +1,9 @@
+xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FF5733"    <!-- Kezdő szín -->
+            android:endColor="#C70039"      <!-- Befejező szín -->
+            android:angle="45"/>             <!-- Szög (0-360 fok) -->
+        </shape>
+    </item>
